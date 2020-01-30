@@ -4,8 +4,21 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+::-moz-selection {
+    color: rgb(55,55,55);
+    background-color: rgb(239,197,17);
+  }
+  
+  ::selection {
+    color: rgb(55,55,55);
+    background-color: rgb(239,197,17);
+  } 
+  
+
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Long Cang', cursive;*/
+
+/* Style NAVBAR */
 
 .barre-noire{
     background-color:rgb(51,51,53);
@@ -60,6 +73,8 @@ li a:hover{
     color: rgb(239,197,17);
 } 
 
+/* Style HEADER */
+
 .entete{
     text-align:center;
     color:white;
@@ -94,6 +109,9 @@ header{
     letter-spacing: 0.03em;
     font-weight:300;
 }
+
+/* Style Section OFFRES */
+
 .backgroundgrey{
     background-color:rgb(238,238,238);
 }
@@ -121,14 +139,12 @@ h3{
 }
 
 .gone{
-    transition: all 0.2s ease-in-out;
-}
-.gtwo{
-overflow:hidden;
+    overflow:hidden;
 }
 
 .gone :hover {
     transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
 }
 
 .resizeapps{
@@ -149,6 +165,8 @@ overflow:hidden;
     width: 12%;
     margin: 0 auto;
 }
+
+/* Style Section TEAM */
 
 .flexteam{
 display:flex;
@@ -175,6 +193,8 @@ h4{
     color:white;
     font-weight:400;
 }
+
+/* Style Section AVIS */
 
 .wrapper2{
     display:grid;
@@ -214,9 +234,11 @@ h4{
     padding: 1em 0 1em 2em;
 }
 
+    /* Permet de désactivé l'affichage à gauche des données utilisateurs */
 .mobilenone{
 display:none;
-}
+} 
+
 
 .infoperso{
 flex-grow:1;
@@ -290,6 +312,16 @@ right: 3px;
     padding:0 5em 5em 5em;
 }
 
+.box:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+
+.box div:hover{
+    box-shadow: none;
+}
+
+/* Style Section CONTACT */
+
 #contact{
     background-color:rgb(55,55,55);
 }
@@ -347,6 +379,8 @@ input.formlist{
 	text-decoration:none;
 }
 
+/* Style Footer */
+
 footer{
     background-color:rgb(68,68,68);
     padding: 5em 0;
@@ -356,6 +390,8 @@ footer{
     text-align:center;
     color:white;
 }
+
+/* Bouton Scroll to top */
 
 #myBtn {
     display: none; 
